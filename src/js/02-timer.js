@@ -26,7 +26,7 @@ const inputEl = document.querySelector('input#datetime-picker');
 startBtnEl.addEventListener('click', onClickStartBtn);
 startBtnEl.disabled = true;
 
-timerEl = {
+const timerEl = {
   days: document.querySelector('.value[data-days]'),
   hours: document.querySelector('.value[data-hours]'),
   minutes: document.querySelector('.value[data-minutes]'),
