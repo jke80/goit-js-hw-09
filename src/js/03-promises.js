@@ -34,8 +34,8 @@ function handleSubmit(event) {
   step = Number(step);
   amount = Number(amount);
 
-  for (let i = 1; i <= amount; i += 1) {
-    createPromise(i, delay).then(onResolve, onReject);
+  for (let position = 1; position <= amount; position += 1) {
+    createPromise(position, delay).then(onResolve, onReject);
     delay += step;
   }
 
